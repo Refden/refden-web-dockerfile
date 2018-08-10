@@ -4,12 +4,12 @@ Dockerfile for running tests on Bitbucket Pipelines for a Rails app
 
 ## Upgrade instructions
 
-`docker build -t mapreal19/refden-ci .` (no--cache?)
+`docker build -t mapreal19/refden-ci .` (Use `-no--cache?` if want to build the image from scratch)
 
 `docker push mapreal19/refden-ci`
 
 ## Test in local
-`docker run -i -t -v <local_directory_of_your_rails_app>:<directory_on_docker> mapreal19/refden-ci /bin/bash
+`docker run -i -t -v <local_directory_of_your_rails_app>:<directory_on_docker> mapreal19/refden-ci /bin/bash`
 
 
 ## Troubleshooting
