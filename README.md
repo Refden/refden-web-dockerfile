@@ -1,15 +1,22 @@
 # Refden Web Dockerfile
 
-Dockerfile for running tests on Bitbucket Pipelines for a Rails app
+Dockerfile for running tests on Bitbucket Pipelines for a Rails app.
+
+https://hub.docker.com/r/mapreal19/refden-ci
 
 ## Upgrade instructions
 
-`docker build -t mapreal19/refden-ci .` (Use `-no--cache?` if want to build the image from scratch)
+1. Build your image:
 
-`docker push mapreal19/refden-ci`
+- `docker build -t mapreal19/refden-ci .` 
+- Use `--no-cache` for updating deps: `docker build -t mapreal19/refden-ci --no-cache.`
+
+2. Push to DockerHub:
+
+- `docker push mapreal19/refden-ci`
 
 ## Test in local
-`docker run -i -t -v <local_directory_of_your_rails_app>:<directory_on_docker> mapreal19/refden-ci /bin/bash`
+`docker run -i -t -v <local_directoy_of_your_rails_app>:<directory_on_docker> mapreal19/refden-ci /bin/bash`
 
 
 ## Troubleshooting
