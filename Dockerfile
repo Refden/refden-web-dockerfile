@@ -3,7 +3,7 @@
 
 # From: https://bitbucket.org/spittet/ruby-postgresql
 
-FROM ruby:2.6.1
+FROM ruby:2.6.3
 RUN apt-get update
 RUN apt-get install -y postgresql postgresql-contrib
 RUN apt-get install sudo

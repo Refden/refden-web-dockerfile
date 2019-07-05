@@ -9,7 +9,7 @@ https://hub.docker.com/r/mapreal19/refden-ci
 1. Build your image:
 
 - `docker build -t mapreal19/refden-ci .` 
-- Use `--no-cache` for updating deps: `docker build -t mapreal19/refden-ci --no-cache.`
+- Use `--no-cache` for updating deps: `docker build -t mapreal19/refden-ci --no-cache .`
 
 2. Push to DockerHub:
 
